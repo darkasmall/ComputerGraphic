@@ -1,0 +1,12 @@
+uniform vec3 cur_color;
+uniform int mode;
+
+varying vec4 fragmentColor;
+
+void main(void)
+{
+	if (mode == 1)
+    	gl_FragColor = vec4(cur_color, 1.0);
+   	else
+   		gl_FragColor = fragmentColor;
+}
